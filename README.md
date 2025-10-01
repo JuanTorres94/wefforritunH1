@@ -3,7 +3,7 @@ Hópverkefni 1 Vefforritun 1 haustönn 2025
 Hópmeðlimir:
 -Jón Þorri Jónsson 
 -Ari
--Brynjar
+-Brynjar Árni
 -Hjörtur
 
 How to run:
