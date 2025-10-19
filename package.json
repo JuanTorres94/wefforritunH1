@@ -1,0 +1,30 @@
+{
+  "name": "wefforritunh1",
+  "version": "1.0.0",
+  "description": "Hópverkefni 1 Vefforritun 1 haustönn 2025",
+  "source": "./index.html",
+  "scripts": {
+    "dev": "parcel index.html 'sidur/*.html'--lazy --no-cache",
+    "start": "parcel",
+    "build": "parcel build",
+    "lint": "stylelint '**/*.scss'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanTorres94/wefforritunH1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JuanTorres94/wefforritunH1/issues"
+  },
+  "homepage": "https://github.com/JuanTorres94/wefforritunH1#readme",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "stylelint": "^16.25.0"
+  }
+}
