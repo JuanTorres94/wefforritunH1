@@ -6,16 +6,14 @@
 
 @use "styles/grid.scss";
 
-@use "styles/utils.scss";
-
 @use "styles/nav.scss";
 
 @use "styles/header.scss";
 
+@use "styles/index.scss";
+
 @use "styles/main.scss";
 
-@use "styles/forms.scss";
-
-@use "styles/tables.scss";
-
 @use "styles/footer.scss";
+
+@use "styles/hero.scss"

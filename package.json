@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/JuanTorres94/wefforritunH1#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.0",
     "parcel": "^2.16.0"
   },
   "dependencies": {

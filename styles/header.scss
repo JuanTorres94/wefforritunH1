@@ -1,0 +1,19 @@
+@use "grid" as *;
+
+
+.site-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+.logo {
+  font-size: 4rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}

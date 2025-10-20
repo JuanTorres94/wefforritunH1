@@ -1,0 +1,28 @@
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+}
+
+.grid--center {
+  align-items: center;
+  justify-items: center;
+}
+
+.grid--stretch {
+  align-items: stretch;
+}
+
+.grid--gap-small {
+  gap: 16px;
+}
+
+.grid--gap-large {
+  gap: 48px;
+}

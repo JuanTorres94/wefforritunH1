@@ -1,0 +1,58 @@
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 524px;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content h2 {
+  width: 672px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 auto 1rem auto;
+}
+
+.hero-content p {
+  width: 672px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 auto 2rem auto;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.button:first-child {
+  background-color: white;
+  color: black;
+}
+
+.button-secondary {
+  background-color: black;
+  color: white;
+}
