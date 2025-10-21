@@ -56,3 +56,9 @@
   background-color: black;
   color: white;
 }
+
+@media (max-width: 900px) {
+  .solution-card { 
+    max-width:unset;
+  }
+}
