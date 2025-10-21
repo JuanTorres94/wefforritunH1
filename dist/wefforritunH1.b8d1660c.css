@@ -300,6 +300,7 @@ footer {
 
 @media (width <= 900px) {
   .footer-content {
+    background-color: 143;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -375,5 +376,11 @@ footer {
 .button-secondary {
   color: #fff;
   background-color: #000;
+}
+
+@media (width <= 900px) {
+  .solution-card {
+    max-width: unset;
+  }
 }
 /*# sourceMappingURL=wefforritunH1.b8d1660c.css.map */
