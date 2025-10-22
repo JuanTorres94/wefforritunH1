@@ -129,6 +129,8 @@ main > *:not(.hero) {
   line-height: 1.4;
 }
 
+
+
 /* Mobile layout */
 @media (max-width: 975px) {
   .review-grid {
@@ -138,7 +140,7 @@ main > *:not(.hero) {
   .solution-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .reviews h2 {
     font-size: 1.5rem;
     width: 100%;
