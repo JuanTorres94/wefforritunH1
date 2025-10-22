@@ -300,7 +300,6 @@ footer {
 
 @media (width <= 900px) {
   .footer-content {
-    background-color: 143;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -382,5 +381,9 @@ footer {
   .solution-card {
     max-width: unset;
   }
+}
+
+.year {
+  color: gray;
 }
 /*# sourceMappingURL=wefforritunH1.b8d1660c.css.map */
