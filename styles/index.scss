@@ -1,5 +1,11 @@
-main {
-  padding: 2rem;
+main .hero {
+  margin: 0;
+  padding: 0;
+}
+
+main > *:not(.hero) {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 
@@ -9,6 +15,9 @@ main {
   padding-top: 4rem;
   padding-bottom: 4rem;
   background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .reviews h2 {
@@ -22,6 +31,8 @@ main {
   color: #666;
   font-weight: 400;
   margin-bottom: 1.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .review-grid {
@@ -31,6 +42,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   align-items: start;
+  box-sizing: border-box;
 }
 
 .review-card {
@@ -118,7 +130,7 @@ main {
 }
 
 /* Mobile layout */
-@media (max-width: 900px) {
+@media (max-width: 975px) {
   .review-grid {
     grid-template-columns: 1fr;
   }
@@ -126,4 +138,18 @@ main {
   .solution-grid {
     grid-template-columns: 1fr;
   }
+  
+  .reviews h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .reviews p {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
 }
+

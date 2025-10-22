@@ -8,6 +8,8 @@ Hópmeðlimir:
 
 How to run:
 - Passa að terminal sé í réttu folderi
+- Skrifa "npm install" í terminal
 - Skrifa "npm run dev" í terminal
+- Opna http://localhost:1234 í vafra
 
 Um verkefnið:
