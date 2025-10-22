@@ -1,0 +1,202 @@
+        
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .allt-efni {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        
+        .gaur {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+        }
+        
+        .gaur img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        
+        .lausn-h2 {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .lausn-titill {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        
+        .verðmiði {
+            margin: 15px 0;
+        }
+        
+        .vinsælt {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 5px;
+            content: "Vinsælt!";
+        }
+        
+        .vinsælt::after {
+            content: "Vinsælt!";
+        }
+        
+        .verð {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .verð::after {
+            content: "-";
+        }
+        
+        
+        .lýsing {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        
+        
+        .valmynd {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .val {
+            width: 100%;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        select {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+            font-size: 16px;
+            appearance: none;
+            background-repeat: no-repeat;
+            background-position: calc(100% - 12px) center;
+        }
+        
+        /* Buy button */
+        .kaupa {
+            width: 100%;
+            padding: 12px 0;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        
+        /* FAQ accordion */
+        details {
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        details:last-child {
+            margin-bottom: 0;
+        }
+        
+        summary {
+            padding: 15px;
+            background-color: white;
+            cursor: pointer;
+            position: relative;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        summary::after {
+            content: "V";
+            font-size: 12px;
+            color: #777;
+        }
+        
+        details[open] summary::after {
+            content: "^";
+        }
+        
+        details p {
+            padding: 15px;
+            background-color: #f9f9f9;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .postlist  {
+            
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5%;
+            
+        }
+        
+            .postlist * {
+            margin: 0;
+            padding: 0;
+            }
+
+            .postlist button {
+                background-color: black;
+                color: white;
+                height: 70%;
+                margin-left: 5%;
+            }
+
+            .postlist input[type="email"] {
+                width: 60%;
+                height: 2rem;
+            }
+
+            .form {
+            display: flex;
+            align-items: center;
+            }

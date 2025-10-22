@@ -2,9 +2,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Lausnir</title>
     
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles.scss" />
+  </head>
+    
+<body>
+<header class="site-header">
+      <nav class="nav container">
+        <div class="nav-left">
+          <a href="#" class="logo">λ</a>
+          <h1 class="site-title">Forritarafjelagið</h1>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul class="nav-links">
+          <li><a href="/index.html">Forsíða</a></li>
+          <li><a href="/sidur/lausnir.html">Lausnir</a></li>
+          <li><a href="/sidur/um-okkur.html" class="active">Um okkur</a></li>
+          <li><a href="../index.html">Starfsfólk</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <!--Forritunar umhverfi og prófanir hluti .. DONE.. (Í bili)-->
+
+    <main>
+        <div class="allt-efni">
+            <span class="gaur">
+                <img src="../myndir/forritari.jpg" alt="Gaur að vinna við tölvu">
+            </span>
+            <div class="lausn-h2">
+                <h1 class="lausn-titill">Forritunarumhverfi og prófanir</h1>
+
+                <div class = "verðmiði">
+                    <div class = "vinsælt"></div>
+                    <div class="verð">25.000kr</div>
+                </div>
+
+                <p class="lýsing">
+                    Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.
+                </p>
+
+                <div class = "valmynd">
+                    <div class = "val">
+                        <label for="val-merking">Forritunarumhverfi</label>
+                        <select name="select" id="select">
+                            <option>Veldu...</option>
+                        </select>
+                    </div>
+
+                    <div class="val">
+                        <label for="val-merking">Prófa aðferð</label>
+                        <select name="select" id="select">
+                            <option value="">Veldu...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="kaupa">kaupa</button>
+
+
+                <details name="faq">
+                    <summary>Hversu stórt teymi á þetta við?</summary>
+                    <p>
+                    Þessi lausn virkar fyrir allar stærðir teyma, allt frá einum forritara til hundruða. Þið munið sjá ljósið eftir að hafa farið í gegnum þessa lausn.
+                    </p>
+                </details>
+                
+                <details name="faq">
+                    <summary>Hvernig fer kennsla á lausnina fram?</summary>
+                </details>
+            </div>
+        </div>
+
+        <section class="umsagnir">
+        
+
+        <div class="reviews">
+        <h2>Umsagnir viðskiptavina</h2>
+        
+
+        <div class="review-grid">
+          <article class="review-card">
+        <div class = "stars">
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+            <h3>Alveg frábær heimspeki</h3>
+            <p>Lausn? Þetta er ekkert minna en ný heimspeki fyrir lífið! Mæli 100% með, megið ekki missa af þessu.</p>
+            <div class="review-author">
+              <img src="../myndir/avatar.png" alt="Nafn viðskiptavinar" />
+              <div class="author-info">
+                <strong>Guðrún Jónsdóttir</strong>
+                <span>1. Ágúst 2025</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="review-card">
+        <div class = "stars">
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+            <h3>Einstaklega góð lausn</h3>
+            <p>Leysti öll okkar vandamál</p>
+            <div class="review-author">
+              <img src="../myndir/avatar.png" alt="Nafn viðskiptavinar" />
+              <div class="author-info">
+                <strong>Guðrún Jónsdóttir</strong>
+                <span>20. september 2025</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+        <div class = "stars">
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            </div>
+            <h3>Forritunarumhverfi voru óskiljanleg fyrir þessa lausn!</h3>
+            <p>Nú liggur allt ljóst fyrir!</p>
+            <div class="review-author">
+              <img src="../myndir/avatar.png" alt="Nafn viðskiptavinar" />
+              <div class="author-info">
+                <strong>Jóna Jónsdóttir</strong>
+                <span>21. september 2025</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        </section>
+
+        <!--Skráning á póstlista-->
+<section class="postlist">
+    <h2>Skráðu þig á póstlista</h2>
+    <p>Látum þig vita af uppfærslum og nýrri virkni í þessari lausn</p>
+    
+    <div class="form">
+        <input type="email" placeholder="nafn@example.com">
+        <button type="submit">Skrá mig</button>
+    </div>
+</section>
+
+        </main>
+
+        <!--Footer hér-->
+        <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#" class="logo">λ</a>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h2>Verkefni</h2>
+          <a href="#">Verkefni #1</a>
+          <a href="#">Verkefni #2</a>
+          <a href="#">Verkefni #3</a>
+          <a href="#">Verkefni #4</a>
+        </div>
+
+        <div class="footer-section">
+          <h2>Lausnir</h2>
+          <a href="#">Lausn 1</a>
+          <a href="#">Lausn 2</a>
+          <a href="#">Lausn 3</a>
+          <a href="#">Lausn 4</a>
+          <a href="#">Lausn 5</a>
+          <a href="#">Lausn 6</a>
+          <a href="#">Lausn 7</a>
+        </div>
+
+            <div class="footer-section">
+              <h2>Síður</h2>
+              <a href="../index.html">Forsíða</a>
+              <a href="lausnir.html">Lausnayfirlit</a>
+              <a href="um-okkur.html">Um okkur</a>
+              <a href="../index.html">Starfsfólk</a>
+            </div>
+      </div>
+    </footer>
+    
 </html>
