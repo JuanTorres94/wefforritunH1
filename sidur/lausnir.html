@@ -1,135 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="is">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lausnir</title>
     <link rel="stylesheet" href="../styles.scss" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-    <body>
-        <header class="site-header">
-          <nav class="nav container">
-            <div class="nav-left">
-              <a href="#" class="logo">λ</a>
-              <h1 class="site-title">Forritarafjelagið</h1>
-            </div>
 
-            <ul class="nav-links">
-              <li>
-                <a href="../index.html">Forsíða</a></li>
-              <li>
-                <a href="hide-in-mobile" class="active">Lausnir</a></li>
-              <li>
-                <a href="um-okkur.html"><span class="hide-in-mobile">Um okkur</span></a></li>
-              <li>
-                <a href="../index.html"><span class="hide-in-mobile">Starfsfólk</span></a></li>
-            </ul>
-          </nav>
-        </header>
-        <main>
+  <body class="page-lausnir">
+    <header class="site-header">
+      <nav class="nav container">
+        <div class="nav-left">
+          <a href="#" class="logo">λ</a>
+          <h1 class="site-title">Forritarafjelagið</h1>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Forsíða</a></li>
+          <li><strong><a href="lausnir.html">Lausnir</a></strong></li>
+          <li><a href="um-okkur.html">Um okkur</a></li>
+          <li><a href="../index.html">Starfsfólk</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="lausnir">
+      <div class="lausnir-layout container">
+        <aside class="filters">
+          <fieldset>
             <div>
-                
-                <fieldset>
-                    <div>
-                        <input type="checkbox">
-                        <div>
-                            <strong>Vefforitun</strong>
-                            <p>Lausnir fyrir vefi og vefforrit</p>
-                        </div>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <div>
-                            <strong>Prófanir</strong>
-                            <p>Prófanalausnir</p>
-                        </div>
-                    </div>
-                     <div>
-                        <input type="checkbox">
-                        <div>
-                            <strong>Merking</strong>
-                            <p>Lorem ipsum dotor</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <p>Kostnaður</p>
-                            <p>25.000-100.000</p>
-                        </div>
-                        <input
-                        type="range"
-                        min="25000"
-                        max="100000"
-                        value="25000"
-                        step="5000"
-                        >
-                    </div>
-                </fieldset>
+              <input type="checkbox" />
+              <div>
+                <strong>Vefforitun</strong>
+                <p>Lausnir fyrir vefi og vefforrit</p>
+              </div>
             </div>
             <div>
-                <fieldset>
-                    <div>
-                        <input type="search" placeholder="Leita"> 
-                    </div>
-                </fieldset>
-                <div>
-                    <button>Nýjast</button>
-                    <button>Verð lægst fyrst</button>
-                    <button>Verð hæst fyrst</button>
-                </div>
-                
+              <input type="checkbox" />
+              <div>
+                <strong>Prófanir</strong>
+                <p>Prófanalausnir</p>
+              </div>
             </div>
             <div>
-                <div>
-                    <img src="../myndir/forritari.jpg" alt="">
-                    <h3>Forritunarumhverfi og prófanir</h3>
-                    <p>Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.</p>
-                    <strong>25.000 kr.-</strong>
-                    <a href="../sidur/lausn.html">Skoða nánar</a>
-                </div>
-                <div>
-                    <img src="../myndir/abstrakt.jpg" alt="">
-                    <h3>Lausn #2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <strong>75.000 kr.-</strong>
-                    <a href="">Skoða nánar</a>
-                </div>
-                <div>
-                    <img src="../myndir/fartolva.jpg" alt="">
-                    <h3>Lausn #3</h3>
-                    <p>Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.</p>
-                    <strong>50.000 kr.-</strong>
-                    <a href="">Skoða nánar</a>
-                </div>
-                <div>
-                    <img src="../myndir/fartolva.jpg" alt="">
-                    <h3>Lausn #3</h3>
-                    <p>Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.</p>
-                    <strong>100.000 kr.-</strong>
-                    <a href="">Skoða nánar</a>
-                </div>
-                <div>
-                    <img src="../myndir/fartolva.jpg" alt="">
-                    <h3>Lausn #3</h3>
-                    <p>Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.</p>
-                    <strong>25.000 kr.-</strong>
-                    <a href="">Skoða nánar</a>
-                </div>
-                <div>
-                    <img src="../myndir/fartolva.jpg" alt="">
-                    <h3>Lausn #3</h3>
-                    <p>Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.</p>
-                    <strong>100.000 kr.-</strong>
-                    <a href="">Skoða nánar</a>
-                </div>
-                
+              <input type="checkbox" />
+              <div>
+                <strong>Merking</strong>
+                <p>Lausnir fyrir merkingar og vefþróun</p>
+              </div>
             </div>
-        </main>
+            <div>
+              <div>
+                <p>Kostnaður</p>
+                <p>25.000–100.000</p>
+              </div>
+              <input
+                type="range"
+                min="25000"
+                max="100000"
+                value="25000"
+                step="5000"
+              />
+            </div>
+          </fieldset>
+        </aside>
         
-    <!-- Footer -->
+        
+        <section class="content">
+          <div class="toolbar">
+
+            <input type="checkbox" id="filter-toggle" class="filter-checkbox" hidden>
+            <label for="filter-toggle" class="filter-toggle">
+              <i class="fa-solid fa-sliders"></i>
+            </label>
+
+            <input type="search" placeholder="Leita" />
+            <div class="sort">
+              <button>Nýjast</button>
+              <button>Verð lægst fyrst</button>
+              <button>Verð hæst fyrst</button>
+            </div>
+          </div>
+
+          <section class="solutions">
+            <h2>Lausnir</h2>
+            <p>Allt sem þú þarft</p>
+
+            <div class="solution-grid">
+              <article class="solution-card">
+                <img src="../myndir/forritari.jpg" alt="Forritari að vinna" />
+                <div class="solution-text">
+                  <h2>Vefþróun</h2>
+                  <p>
+                    Við sérhæfum okkur í hönnun og forritun nútímalegra vefsíðna.
+                  </p>
+                  <div class="price">Verð: 45.000 kr.</div>
+                </div>
+                <div class="card-buttons">
+                  <a href="#" class="btn">Skoða nánar</a>
+                </div>
+              </article>
+
+              <article class="solution-card">
+                <img src="../myndir/abstrakt.jpg" alt="Kerfislausnir" />
+                <div class="solution-text">
+                  <h2>Kerfislausnir</h2>
+                  <p>
+                    Sérsniðnar lausnir fyrir fyrirtæki sem vilja bæta ferla.
+                  </p>
+                  <div class="price">Verð: 60.000 kr.</div>
+                </div>
+                <div class="card-buttons">
+                  <a href="#" class="btn">Skoða nánar</a>
+                </div>
+              </article>
+
+              <article class="solution-card">
+                <img src="../myndir/placeholder.png" alt="Hugbúnaðarþróun" />
+                <div class="solution-text">
+                  <h2>Hugbúnaðarþróun</h2>
+                  <p>Við búum til hugbúnað frá grunni eftir þínum þörfum.</p>
+                  <div class="price">Verð: 80.000 kr.</div>
+                </div>
+                <div class="card-buttons">
+                  <a href="#" class="btn">Skoða nánar</a>
+                </div>
+              </article>
+
+              <article class="solution-card">
+                <img src="../myndir/placeholder.png" alt="Vefþróun" />
+                <div class="solution-text">
+                  <h2>Vefþróun</h2>
+                  <p>
+                    Við sérhæfum okkur í hönnun og forritun nútímalegra vefsíðna.
+                  </p>
+                  <div class="price">Verð: 55.000 kr.</div>
+                </div>
+                <div class="card-buttons">
+                  <a href="#" class="btn">Skoða nánar</a>
+                </div>
+              </article>
+
+              <article class="solution-card">
+                <img src="../myndir/placeholder.png" alt="Kerfislausnir" />
+                <div class="solution-text">
+                  <h2>Kerfislausnir</h2>
+                  <p>Sérsniðnar lausnir fyrir fyrirtæki sem vilja bæta ferla.</p>
+                  <div class="price">Verð: 65.000 kr.</div>
+                </div>
+                <div class="card-buttons">
+                  <a href="#" class="btn">Skoða nánar</a>
+                </div>
+              </article>
+
+              <article class="solution-card">
+                <img src="../myndir/placeholder.png" alt="Hugbúnaðarþróun" />
+                <div class="solution-text">
+                  <h2>Hugbúnaðarþróun</h2>
+                  <p>Við búum til hugbúnað frá grunni eftir þínum þörfum.</p>
+                  <div class="price">Verð: 70.000 kr.</div>
+                </div>
+                <div class="card-buttons">
+                  <a href="#" class="btn">Skoða nánar</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
@@ -143,31 +192,31 @@
         </div>
 
         <div class="footer-section">
-          <h2>Verkefni</h2>
-          <a href="#">Verkefni #1</a>
-          <a href="#">Verkefni #2</a>
-          <a href="#">Verkefni #3</a>
-          <a href="#">Verkefni #4</a>
+          <h2>Um okkur</h2>
+          <a href="#">Hver við erum</a>
+          <a href="#">Starfsfólk</a>
+          <a href="#">Saga fyrirtækisins</a>
+          <a href="#">Fyrirtækjagildi</a>
         </div>
 
         <div class="footer-section">
-          <h2>Lausnir</h2>
-          <a href="#">Lausn 1</a>
-          <a href="#">Lausn 2</a>
-          <a href="#">Lausn 3</a>
-          <a href="#">Lausn 4</a>
-          <a href="#">Lausn 5</a>
-          <a href="#">Lausn 6</a>
-          <a href="#">Lausn 7</a>
+          <h2>Þjónusta</h2>
+          <a href="#">Vefþróun</a>
+          <a href="#">Kerfislausnir</a>
+          <a href="#">Hugbúnaðarþróun</a>
+          <a href="#">Viðhald og stuðningur</a>
+          <a href="#">Ráðgjöf</a>
         </div>
 
-            <div class="footer-section">
-              <h2>Síður</h2>
-              <a href="../index.html">Forsíða</a>
-              <a href="lausnir.html">Lausnayfirlit</a>
-              <a href="um-okkur.html">Um okkur</a>
-              <a href="../index.html">Starfsfólk</a>
-            </div>
+        <div class="footer-section">
+          <h2>Hafðu samband</h2>
+          <a href="#">Listagata 1, Reykjavík</a>
+          <a href="mailto:forritarafjelagid@example.com"
+            >forritarafjelagid@example.com</a
+          >
+          <a href="tel:234-2345">Sími 234-2345</a>
+          <a href="#">Opnunartímar</a>
+        </div>
       </div>
     </footer>
   </body>
